@@ -47,29 +47,37 @@ const Landing = () => {
         </div>
         
         <div data-aos="fade-right" className={styles.right}>
-        <h1
-              data-aos="fade-in"
-              data-aos-duration="2000"
-              className={styles.title}
-            >
-               Disha Gelani
-            </h1>
+        
             <h2
               data-aos="fade-in"
               data-aos-duration="2000"
               className={styles.sub}
               >
-              Full Stack Developer
+              Hi ! I'm <span
+              className={styles.title}
+            >
+               Disha Gelani.
+            </span> 
             </h2>
             <p
               data-aos="fade-in"
               data-aos-duration="2000"
               className={styles.description}
             >
-              Dedicated and result-oriented Full Stack Developer with a flair for crafting high-performance web applications and innovative solutions. Expert in React.js, Next.js, Node.js, and modern JavaScript frameworks, I thrive on turning complex client requirements into seamless, dynamic digital experiences.
-              <br />
+              I'm dedicated and result-oriented <span  style={{fontSize:'1.5em', fontWeight:'600', color : '#fbc34a'}}>Full Stack Developer</span> with a flair for crafting high-performance web applications and innovative solutions. Expert in React.js, Next.js, Node.js, and modern JavaScript frameworks, I thrive on turning complex client requirements into seamless, dynamic digital experiences.
+            </p>
+            <p
+              data-aos="fade-in"
+              data-aos-duration="2000"
+              className={styles.description}
+            >
               I’m not just a developer—I’m a problem-solver, always seeking opportunities to innovate and deliver exceptional experiences. Whether it’s mastering new technologies, or leading teams, I bring creativity and passion to everything I do. Not afraid to tackle new challenges, I take pride in delivering top-notch digital solutions. 
-<br/>
+            </p>
+            <p
+              data-aos="fade-in"
+              data-aos-duration="2000"
+              className={styles.description}
+            >
               I am passionate about continuing to grow as a developer, constantly learning, and contributing to impactful projects that push boundaries.
             </p>
         </div>

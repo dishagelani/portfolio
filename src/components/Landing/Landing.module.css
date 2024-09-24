@@ -6,11 +6,9 @@
 
 .left {
   flex: 1;
-  display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: 100%;
+  display: flex;
 }
 
 .right {
@@ -18,22 +16,20 @@
   margin-right : 10%;
 }
 
-.cube {
-  flex: 1;
-}
-
 .title {
   font-size: 50px;
   font-weight: 600;
+  color: #fbc34a;
 }
 
 .sub {
-  font-style: italic;
   margin: 20px 0px;
+  font-size: 1.5em;
 }
 
 .description {
   font-weight: 300;
+  padding-bottom: 20px;
 }
 
 .cube {
