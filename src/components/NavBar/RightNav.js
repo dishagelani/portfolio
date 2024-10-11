@@ -33,7 +33,6 @@ const Ul = styled.ul`
     right: 0px;
     bottom: 0px;
   }
-    
   li:hover:before,
   li:hover:after {
     opacity: 1;
@@ -70,7 +69,6 @@ const RightNav = ({ open }) => {
           PROJECTS
         </Link>
       </li>
-     
       <li>
         <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
           CONTACT
@@ -78,7 +76,7 @@ const RightNav = ({ open }) => {
       </li>
       <li>
         <a
-          href="https://drive.google.com/file/d/1JQ7qX5kZCSY48qLG-EcjN-Xu-ACIbjkC/view?usp=sharing"
+          href="https://drive.google.com/file/d/1FkiNrvegiFSvxb9NqzfXqCY3HGTsalAk/view?usp=sharing"
           target="__blank"
         >
           RESUME

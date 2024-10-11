@@ -6,7 +6,7 @@ const Nav = styled.nav`
   width: 100%;
   height: 55px;
   background: #000000;
-  // box-shadow: 0 0 4px rgb(255, 255, 255);
+  border-bottom: 2px solid #f1f1f1;
   display: flex;
   justify-content: center;
   position: fixed;

@@ -11,26 +11,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const templateParams = {
-      subject: e.target.user_subject.value,
-      from_name: e.target.from_name.value,
-      reply_to: e.target.reply_to.value,
-      message: e.target.message.value,
-      to_name : "Disha",
-      to_email:"dishagelani1999@gmail.com"
-    };
 
     emailjs
-      .send(
+      .sendForm(
         config.SERVICE_ID,
         config.TEMPLATE_ID,
-        templateParams,
+        formRef.current,
         config.USER_ID
       )
       .then(
         (result) => {
           console.log(result.text);
           setDone(true);
+          formRef.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -38,8 +31,6 @@ const Contact = () => {
       );
   };
  
-
-  // if (!isLoaded) return <div>Loading</div>;
   return (
     <div id="contact" className={styles.contact}>
       <div className={styles.right}>
@@ -56,7 +47,7 @@ const Contact = () => {
             data-aos="fade-up-right"
             type="text"
             placeholder="Subject"
-            name="user_subject"
+            name="subject"
           />
           <input
             data-aos="fade-up-right"
