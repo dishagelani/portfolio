@@ -1,12 +1,12 @@
 .project {
   border-radius: 0 !important;
-  margin: 40px;
+  margin: 40px auto;
   padding: 20px;
   width: 80%;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5em;
   margin: 0;
 }
 
@@ -25,6 +25,7 @@
 }
 .description{
   line-height: 1.6;
+  font-size: 0.9em;
 }
 
 .button {
@@ -35,6 +36,8 @@
 
 @media screen and (max-width: 390px) {
   .project {
-    width: 40%;
+    /* width: auto; */
+    margin: 20px auto;
+ 
   }
 }

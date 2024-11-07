@@ -17,13 +17,9 @@ form{
   margin: 20px 0;
 }
 
-.title {
-  font-size: 60px;
-  width: 70%;
-}
-
 .description {
   font-weight: 200;
+  font-size: 0.9em;
 }
 
 button {
@@ -78,7 +74,7 @@ input:focus {
 @media screen and (max-width: 390px) {
   .contact {
     flex-direction: column;
-    padding: 0px 40px;
+    padding: 150px 0 20px 20px;
     overflow-x: hidden;
   }
 
@@ -98,12 +94,15 @@ input:focus {
   }
 
   input {
-    width: 35%;
     height: 40px;
     margin: 10px;
     margin-left: 0;
   }
   
+  textarea{
+    width: 80%;
+  }
+
   button {
     margin-top: 10px;
   }

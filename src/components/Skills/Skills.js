@@ -35,9 +35,9 @@ const Skills = () => {
 
     useEffect(() => {
         const gridPositions = [];
-        const columns = 6;
+        const columns = window.innerWidth <= 768 ? 3 : 6;
         const iconSize = 90;
-        const spacing = 80;
+        const spacing = window.innerWidth <= 768 ? 20 : 80;
     
         // Calculate grid positions
         icons.forEach((_, i) => {
@@ -108,7 +108,7 @@ const Skills = () => {
                         ) : (
                             <CIcon icon={item.icon} size="xl" />
                         )}
-                        <p style={{ marginTop: '5px', color: 'white', textAlign: 'center' }}>
+                        <p style={{ marginTop: '5px', color: 'white', textAlign: 'center', fontSize :'0.9em' }}>
                             {item.name}
                         </p>
                     </div>

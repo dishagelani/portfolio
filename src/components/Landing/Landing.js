@@ -64,7 +64,7 @@ const Landing = () => {
               data-aos-duration="2000"
               className={styles.description}
             >
-              I'm dedicated and result-oriented <span  style={{fontSize:'1.5em', fontWeight:'600', color : '#fbc34a'}}>Full Stack Developer</span> with a flair for crafting high-performance web applications and innovative solutions. Expert in React.js, Next.js, Node.js, and modern JavaScript frameworks, I thrive on turning complex client requirements into seamless, dynamic digital experiences.
+              I'm dedicated and result-oriented <span  style={{fontSize:'1.5em', fontWeight:'600', color : '#fbc34a'}}>Full Stack Developer</span> with a flair for crafting high-performance web applications and innovative solutions. Expert in React.js, Vue.js, Node.js, and modern JavaScript frameworks, I thrive on turning complex client requirements into seamless, dynamic digital experiences.
             </p>
             <p
               data-aos="fade-in"

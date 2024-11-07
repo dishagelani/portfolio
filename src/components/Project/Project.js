@@ -1,8 +1,6 @@
 import styles from "./Project.module.css";
 
-
 const Project = ({  id,link, delay, title, techno, description,  source }) => {
-
   const isEven = id % 2 == 0
 
   return (

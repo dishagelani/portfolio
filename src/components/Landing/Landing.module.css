@@ -151,21 +151,29 @@
 }
 
 /* Mobile responsiveness */
+/* Mobile responsiveness */
+/* Mobile responsiveness */
 @media screen and (max-width: 390px) {
   .landing {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     padding: 20px;
+    height: 100vh; /* Ensure the landing container is full height */
   }
 
   .left {
-    width: 100%;
-    margin-bottom: 50px;
+    display: none;
   }
 
   .right {
-    padding: 10px;
+    position: relative; /* Enable absolute child positioning */
+    height: 100vh;
     margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
   }
 
   .title {
@@ -190,3 +198,4 @@
     font-size: 50px;
   }
 }
+

@@ -5,7 +5,6 @@ export const projects = [
     title: "Ideal Showroom",
     techno: [ 'React','SCSS', 'Ant Design', 'GSAP', 'Calendly'],
     description: "An e-commerce platform that allows users to browse products, explore brands, and shop through a digital showroom upon logging in. The system includes an admin panel for managing products, brands, and inventory.",
-  
     link: "https://ideal-showroom.web.app/",
     delay: "0",
   },
@@ -48,7 +47,7 @@ export const projects = [
     title: "Primary Way",
     techno: ['SASS', 'TypeScript', 'React'],
     description: "Primary Way is a dynamic application designed to offer an interactive learning experience for students and tutors. Key features include secure OAuth authentication, role-based access control, intuitive dashboards and secure data encryption.",
-    source: "https://github.com/dishagelani/primaryway-admin-panel",
+    link : "https://primarywayapi.web.app/",
     delay: "200",
   },
 ];

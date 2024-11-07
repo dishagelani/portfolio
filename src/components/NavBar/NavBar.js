@@ -1,25 +1,42 @@
 import React from "react";
-import styled from "styled-components";
-import Burger from "./Burger";
+import { Link } from "react-scroll";
+import styles from "./Navbar.module.css";
 
-const Nav = styled.nav`
-  width: 100%;
-  height: 55px;
-  background: #000000;
-  border-bottom: 2px solid #f1f1f1;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  text-align: center;
-  z-index: 9999;
-`;
+
+
 
 const Navbar = () => {
   return (
-    <Nav data-aos="fade-down">
-      <Burger />
-    </Nav>
+    <div className={styles.navbar} data-aos="fade-down">
+    <ul className={styles.list}>
+      <li>
+        <Link to="landing" spy={true} smooth={true} offset={0} duration={500}>
+          HOME
+        </Link>
+      </li>
+      <li>
+        <Link to="project" spy={true} smooth={true} offset={-30} duration={500}>
+          PROJECTS
+        </Link>
+      </li>
+      <li>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+          CONTACT
+        </Link>
+      </li>
+      <li>
+        <a
+          href="https://drive.google.com/file/d/1FkiNrvegiFSvxb9NqzfXqCY3HGTsalAk/view?usp=sharing"
+          target="__blank"
+        >
+          RESUME
+        </a>
+      </li>
+    </ul>
+    </div>
   );
 };
+
+
 
 export default Navbar;
