@@ -44,7 +44,7 @@ const Preloader = ({ setLoading }) => {
       <div className={styles.loading}>
         <div className={styles.follow}></div>
         <div
-          className={styles["progress-bar"]}  // You no longer need to conditionally add hide here
+          className={styles["progress-bar"]}  
           id="progress-bar"
           style={{ width: counter + "%" }}
         ></div>

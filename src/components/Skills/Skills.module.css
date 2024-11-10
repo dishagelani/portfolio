@@ -13,10 +13,9 @@
 }
 
 .container {
-    position: relative; /* Relative positioning for the container */
+    position: relative;
     width: 100%;
     top: 50%;
-    /* margin-top: 50px; */
 }
 
 .icon {
@@ -29,17 +28,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute; /* For GSAP animation */
+    position: absolute; 
 }
 
-/* Tablet responsiveness */
 @media screen and (max-width: 768px) {
     .skills {
-        padding-top: 50px;
+        padding-top: 250px;
     }
 
     .title {
         font-size: 40px;
+        padding: 20px;
     }
 
     .icon {
@@ -47,12 +46,17 @@
         height: 70px;
         padding: 10px;
     }
+
+    .container {
+        height: auto; 
+        top: 35%;
+    }
 }
 
-/* Mobile responsiveness */
-@media screen and (max-width: 390px) {
+
+@media screen and (max-width: 450px) {
     .skills {
-        padding-top: 100px;
+        padding-top: 200px;
     }
 
     .title {
@@ -67,11 +71,24 @@
     }
 
     .container {
-        height: auto; /* Allow the container to adjust its height */
-        top: 60%;
+        height: auto; 
+        top: 45%;
     }
 
     .icon p {
-        font-size: 0.75rem; /* Adjust text size for mobile */
+        font-size: 0.75rem; 
     }
+}
+
+
+@media screen and (max-width: 380px) {
+    .skills {
+        padding: 50px 0 100px 0;
+    }
+
+    .container {
+        top: 55%;
+
+    }
+
 }

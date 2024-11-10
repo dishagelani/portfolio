@@ -35,9 +35,9 @@ const Skills = () => {
 
     useEffect(() => {
         const gridPositions = [];
-        const columns = window.innerWidth <= 768 ? 3 : 6;
+        const columns = window.innerWidth <= 450 ? 3  : window.innerWidth <= 768 ? 4 : 6;
         const iconSize = 90;
-        const spacing = window.innerWidth <= 768 ? 20 : 80;
+        const spacing = window.innerWidth <= 450 ? 20 : 80;
     
         // Calculate grid positions
         icons.forEach((_, i) => {
@@ -80,16 +80,16 @@ const Skills = () => {
             });
         };
     
-        // Use styles.container as the correct trigger
+    
         ScrollTrigger.create({
-            trigger: `.${styles.container}`, // Correct the trigger reference
+            trigger: `.${styles.container}`,
             start: "top center",
             onEnter: scatterIcons,      // When scrolling down
             onEnterBack: scatterIcons,  // When scrolling back up
             onLeave: resetIcons,        // Reset the icons when leaving the viewport
             onLeaveBack: resetIcons,    // Reset the icons when scrolling back up past the trigger
         });
-    }, [icons, styles.container]); // Add styles.container as a dependency
+    }, [icons, styles.container]);
     
 
     return (

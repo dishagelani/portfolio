@@ -24,7 +24,6 @@
   justify-content: center;
 }
 
-/* Tablet responsiveness */
 @media screen and (max-width: 768px) {
   .projectList {
     padding: 20px;
@@ -49,8 +48,7 @@
   }
 }
 
-/* Mobile responsiveness */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
   .projectList {
     padding: 0 10px;
   }
@@ -69,7 +67,6 @@
   }
 
   .project {
-    /* width: 100%; */
     margin-bottom: 20px;
   }
 

@@ -52,5 +52,4 @@ li:after {
 li:hover:before,
 li:hover:after {
   opacity: 1;
-  /* width: 100%; */
 }
