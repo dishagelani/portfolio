@@ -36,18 +36,20 @@ export const projects = [
   },
   {
     id: 5,
+    title: "Primary Way",
+    techno: ['SASS', 'TypeScript', 'React'],
+    description: "Primary Way is a dynamic application designed to offer an interactive learning experience for students and tutors. Key features include secure OAuth authentication, role-based access control, intuitive dashboards and secure data encryption.",
+    link : "https://adminprimaryway.vercel.app/",
+    delay: "100",
+  },
+
+  {
+    id: 6,
     title: "E-Debates",
     techno:[ 'React','MaterialUI', 'Redux thunk',  'OAuth','Socket.io', 'Firebase' ],
     description: "An online debate application that allows users to participate in live debates, track arguments, and vote on outcomes. The system manages user authentication, real-time interactions, and stores debate data in a structured database for analysis and engagement tracking.",
     source: "https://github.com/dishagelani/e-debates",
-    delay: "100",
-  },
-  {
-    id: 6,
-    title: "Primary Way",
-    techno: ['SASS', 'TypeScript', 'React'],
-    description: "Primary Way is a dynamic application designed to offer an interactive learning experience for students and tutors. Key features include secure OAuth authentication, role-based access control, intuitive dashboards and secure data encryption.",
-    link : "https://primarywayapi.web.app/",
     delay: "200",
   },
 ];
+ 
